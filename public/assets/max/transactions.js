@@ -1,3 +1,4 @@
+(function () {
 $(document).ready(function () {
 	$.getJSON('/api/1/json/transactions', function (data) {
 			var response = data && data.response || {};
@@ -30,4 +31,5 @@ $(document).ready(function () {
 		console.log('todo: handle failure gracefully');
 	})
 });
+}());
 
