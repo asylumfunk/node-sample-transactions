@@ -11,3 +11,13 @@ DIV.loading {
 	background-color: #F00;
 }
 
+FORM {
+	max-width: 400px;
+	padding: 15px;
+	margin: 50px auto;
+}
+
+BODY {
+	background: #eee;
+}
+

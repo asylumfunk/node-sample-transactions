@@ -2,44 +2,64 @@
 <html>
 	<head>
 		<title>Send</title>
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/stylesheet" href="assets/max/style.css" />
 	</head>
 	<body>
-		<div>
-			<a href="index.html">Home</a>
+		<div class="container">
+			<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+						<a href="/" class="navbar-brand">Money</a>
+					</div>
+					<div class="collapse navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li>
+								<a href="/">Home</a>
+							</li>
+							<li class="active">
+								<a href="send.html">Send</a>
+							</li>
+							<li>
+								<a href="transactions.html">Transactions</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<form id="send">
+				<h1>Send Money</h1>
+				<div>
+					<label for="send_to">To: </label>
+					<input id="send_to" type="email" class="form-control" placeholder="Email Address" required autofocus />
+				</div>
+				<div>
+					<label for="send_amount">Amount: </label>
+					<span class="currency_symbol">$</span>
+					<input id="send_amount" type="text" class="form-control" />
+					<select id="send_currency" class="form-control">
+						<option value="usd">USD</option>
+						<option value="eur">EUR</option>
+						<option value="jpy">JPY</option>
+					</select>
+				</div>
+				<div>
+					<label for="send_message">Message (optional): </label>
+					<textarea id="send_message" class="form-control"></textarea>
+				</div>
+				<div>
+					<label for="send_reason">What's this payment for?</label>
+					<select id="send_reason" class="form-control">
+						<option value="1">family or friend</option>
+						<option value="2">goods or services</option>
+					</select>
+				</div>
+				<div>
+					<input type="reset" value="Clear" class="btn btn-lg btn-block"/>
+					<input type="submit" value="Next" class="btn btn-lg btn-primary btn-block"/>
+				</div>
+			</form>
 		</div>
-		<h1>Send Money</h1>
-		<form id="send">
-			<div>
-				<label for="send_to">To: </label>
-				<input id="send_to" type="text" />
-			</div>
-			<div>
-				<label for="send_amount">Amount: </label>
-				<span class="currency_symbol">$</span>
-				<input id="send_amount" type="text" />
-				<select id="send_currency">
-					<option value="usd">USD</option>
-					<option value="eur">EUR</option>
-					<option value="jpy">JPY</option>
-				</select>
-			</div>
-			<div>
-				<label for="send_message">Message (optional): </label>
-				<textarea id="send_message"></textarea>
-			</div>
-			<div>
-				<label for="send_reason">What's this payment for?</label>
-				<select id="send_reason">
-					<option value="1">family or friend</option>
-					<option value="2">goods or services</option>
-				</select>
-			</div>
-			<div>
-				<input type="reset" value="Clear" />
-				<input type="submit" value="Next" />
-			</div>
-		</form>
 		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script src="assets/max/send.js"></script>
 	</body>
