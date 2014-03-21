@@ -36,6 +36,20 @@ $(document).ready(function () {
 		} else {
 			$amount.removeClass('error');
 		}
+		if (valid) {
+			$('BODY')
+				.append(
+					$('<DIV class="loading">')
+						.text('loading...')
+				)
+			;
+			window.setTimeout(function () {
+				$('DIV.loading').text('success!');
+				window.setTimeout(function () {
+					window.location = '/';
+				}, 3000);
+			}, 3000);
+		}
 		event.preventDefault();
 	});
 });
