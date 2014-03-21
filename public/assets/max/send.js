@@ -1,5 +1,15 @@
 (function () {
 $(document).ready(function () {
+	$('SELECT#send_currency').change(function (event) {
+		var currency = $(event.target).val();
+		var symbol = '&#36;';
+		if (currency === 'eur') {
+			symbol = '&euro;';
+		} else if (currency === 'jpy') {
+			symbol = '&yen;';
+		}
+		$('SPAN.currency_symbol').html(symbol);
+	});
 	$('INPUT#send_amount').blur(function (event) {
 		var $amount = $(event.target);
 		var amounts = $amount.val().split('.');
