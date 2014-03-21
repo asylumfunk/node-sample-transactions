@@ -1,7 +1,12 @@
 # Paypal Transactions
 
+## Instructions
+```sh
+# start server
+node ./lib/server.js
+```
+
 ## TODO
-- implement Node.js server
 - create index/landing page
 	- link to "send money"
 	- link to "transactions"
