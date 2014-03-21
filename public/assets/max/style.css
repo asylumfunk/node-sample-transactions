@@ -7,3 +7,7 @@ DIV.loading {
 	color: #FFF;
 }
 
+.error {
+	background-color: #F00;
+}
+
