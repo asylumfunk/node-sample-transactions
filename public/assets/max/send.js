@@ -40,7 +40,7 @@ $(document).ready(function () {
 		} else {
 			$to.removeClass('error');
 		}
-		if (/[^0-9,.]|^[ \t]*$/.test($amount.val())) {
+		if (/[^0-9,.]|^[ \t0,.]*$/.test($amount.val())) {
 			$amount.addClass('error');
 			valid = false;
 		} else {
