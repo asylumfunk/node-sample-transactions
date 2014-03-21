@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Send</title>
+	</head>
+	<body>
+		<div>
+			<a href="index.html">Home</a>
+		</div>
+		<h1>Send Money</h1>
+		<form id="send">
+			<div>
+				<label for="send_to">To: </label>
+				<input id="send_to" type="text" />
+			</div>
+			<div>
+				<label for="send_amount">Amount: </label>
+				<span class="currency_symbol">$</span>
+				<input id="send_amount" type="text" />
+				<select id="send_currency">
+					<option value="usd">USD</option>
+					<option value="eur">EUR</option>
+					<option value="jpy">JPY</option>
+				</select>
+			</div>
+			<div>
+				<label for="send_message">Message (optional): </label>
+				<textarea id="send_message"></textarea>
+			</div>
+			<div>
+				<label for="send_reason">What's this payment for?</label>
+				<select id="send_reason">
+					<option value="1">family or friend</option>
+					<option value="2">goods or services</option>
+				</select>
+			</div>
+			<div>
+				<input type="reset" value="Clear" />
+				<input type="submit" value="Next" />
+			</div>
+		</form>
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="assets/max/send.js"></script>
+	</body>
+</html>
+

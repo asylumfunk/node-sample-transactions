@@ -8,9 +8,6 @@ node ./lib/server.js
 
 ## TODO
 - create send page
-	- add form
-	- onReset
-		- clear form
 	- onSubmit
 		- validate
 		- show loading screen
