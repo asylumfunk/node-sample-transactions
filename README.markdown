@@ -3,8 +3,12 @@
 ## Instructions
 ```sh
 # start server
+git clone https://github.com/asylumfunk/node-sample-transactions.git
+cd node-sample-transactions
 node ./lib/server.js
 ```
+The project can then be accessed via the following link:
+- http://localhost:8088/
 
 ## Considerations
 - Styling is minimal and only used as absolutely required (error states
