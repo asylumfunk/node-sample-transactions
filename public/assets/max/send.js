@@ -34,6 +34,7 @@ $(document).ready(function () {
 		var valid = true;
 		var $to = $('#send_to');
 		var $amount = $('#send_amount');
+		var $loading;
 		if (/[^0-9,.]|^[ \t0,.]*$/.test($amount.val())) {
 			$amount.addClass('error');
 			valid = false;
@@ -41,14 +42,10 @@ $(document).ready(function () {
 			$amount.removeClass('error');
 		}
 		if (valid) {
-			$('BODY')
-				.append(
-					$('<DIV class="loading">')
-						.text('loading...')
-				)
-			;
+			$loading = $('.loading');
+			$loading.show();
 			window.setTimeout(function () {
-				$('DIV.loading').text('success!');
+				$loading.find('H1').text('success');
 				window.setTimeout(function () {
 					window.location = '/';
 				}, 3000);
