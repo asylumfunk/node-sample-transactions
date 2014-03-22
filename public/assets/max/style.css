@@ -16,7 +16,7 @@ DIV.loading {
 }
 
 .error {
-	background-color: #F00;
+	border-color: #F00;
 }
 
 FORM, TABLE {
