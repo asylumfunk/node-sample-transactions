@@ -24,3 +24,29 @@ BODY {
 	background: #eee;
 }
 
+#footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #222;
+	border-color: #080808;
+}
+
+.contents {
+	margin-bottom: 75px;
+}
+
+#footer > .container {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.container .text-muted {
+	margin: 20px 0;
+}
+
+.text-muted {
+	color #999;
+}
+
