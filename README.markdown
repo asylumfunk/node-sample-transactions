@@ -1,4 +1,4 @@
-# Paypal Transactions
+# Transactions
 
 ## Instructions
 ```sh
